@@ -1,0 +1,1 @@
+//The only difference between a class and a struct is that by default the members of a struct are public whereas in a class they are private.
