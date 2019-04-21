@@ -2,9 +2,10 @@
 //
 //struct Person
 //{
-//    std::string m_Name;
-//    std::string m_Address;
+//    friend std::istream &Read(std::istream &is, Person &person);
+//    friend std::ostream &Print(std::ostream &os, const Person &person);
 //
+//public:
 //    Person() = default;
 //    Person(std::string &Name, std::string &Address) : m_Name(Name), m_Address(Address) {}
 //    Person(std::istream &is);
@@ -13,6 +14,10 @@
 //    inline std::string GetAddress() const { return m_Address; }
 //
 //    //Both the functions will be const because they don't change the object.
+//
+//private:
+//    std::string m_Name;
+//    std::string m_Address;
 //};
 //
 //std::istream &Read(std::istream &is, Person &person)
